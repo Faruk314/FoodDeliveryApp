@@ -1,0 +1,38 @@
+.filter-card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+  width: 150px;
+  height: 170px;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.filter-card:hover {
+  background-color: #ff8f59;
+}
+
+.filter-card:hover span {
+  background-color: white;
+}
+
+.filter-card:hover .filter-card__icon {
+  color: black;
+}
+
+.filter-card span {
+  background-color: #ff8f59;
+  border-radius: 100%;
+  padding: 1rem;
+}
+
+.filter-card__icon {
+  color: white;
+}
+
+.filter-card h3 {
+  color: black;
+}

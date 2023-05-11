@@ -1,0 +1,44 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+  opacity: 0.7;
+  border-radius: 15px;
+  text-align: center;
+  padding-top: 3rem;
+  width: 10rem;
+}
+
+.card:nth-of-type(1) {
+  margin-bottom: 5rem;
+}
+
+.card:nth-of-type(2) {
+  margin-bottom: 5rem;
+}
+
+.card img {
+  position: absolute;
+  border-radius: 100%;
+  top: -25%;
+  left: 20px;
+  width: 8rem;
+  height: 7rem;
+}
+
+.card h2 {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.card span:nth-of-type(1) {
+  color: grey;
+}
+
+.card span {
+  color: green;
+  padding: 0.5rem;
+  padding-bottom: 1rem;
+}

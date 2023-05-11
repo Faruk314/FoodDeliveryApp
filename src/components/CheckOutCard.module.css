@@ -1,0 +1,54 @@
+.cart-checkout__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1rem;
+  gap: 10px;
+  border-radius: 15px;
+}
+
+.cart-checkout__card img {
+  width: 100px;
+  background-color: red;
+  height: 100px;
+}
+
+.cart-checkout__content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-checkout__quantity {
+  display: flex;
+  gap: 5px;
+  text-align: center;
+}
+
+.cart-checkout__quantity span {
+  cursor: pointer;
+  font-size: 34px;
+}
+
+.cart-checkout__quantity span:first-child {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 35px;
+  background-color: #ff8f59;
+  border: none;
+  color: white;
+}
+
+.cart-checkout__quantity span:last-child {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 35px;
+  background-color: #ff8f59;
+  border: none;
+  color: white;
+}

@@ -1,0 +1,42 @@
+.mobile-nav__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-nav_list li {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.mobile-nav_list a:hover {
+  color: #ff8f59;
+}
+
+.mobile-nav__close {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0.5rem 0.8rem;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #ff8f59;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.mobile-nav__close:hover {
+  background-color: white;
+  border: #ff8f59 1px solid;
+  color: #ff8f59;
+}

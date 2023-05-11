@@ -1,0 +1,26 @@
+.top-btn {
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  background-color: #ff8f59;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  padding: 1rem;
+  z-index: 10000;
+}
+
+.top-btn:hover {
+  background-color: white;
+  border: 1px solid #ff8f59;
+  color: #ff8f59;
+}
+
+.top-btn__icon {
+  width: 30px;
+  height: 30px;
+}

@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import MealsSlider from "./components/MealsSlider";
+import FilterMeals from "./components/FilterMeals";
+import GoToTopBtn from "./components/GoToTopBtn";
+import Cart from "./components/Cart";
+import { useSelector } from "react-redux";
+import MobileNav from "./components/MobileNav";
+import OrderForm from "./components/OrderForm";
 
 function App() {
+  const isCartOpen = useSelector((state) => state.cart.isCartOpen);
+  const isNavOpen = useSelector((state) => state.nav.isNavOpen);
+  const isFormOpen = useSelector((state) => state.cart.isFormOpen);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Header />
+      {isCartOpen && <Cart />}
+      {isNavOpen && <MobileNav />}
+      {isFormOpen && <OrderForm />}
+      <Hero />
+      <MealsSlider />
+      <FilterMeals />
+      <GoToTopBtn />
     </div>
   );
 }
